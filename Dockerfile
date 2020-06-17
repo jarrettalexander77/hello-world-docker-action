@@ -1,5 +1,5 @@
 FROM alpine:3.10
 
-COPY entrypoint.sh /entrypoint.sh
+COPY index.py /index.py
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["python", "index.js"]
