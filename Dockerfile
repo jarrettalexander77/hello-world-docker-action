@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM ubuntu:16.04
 
 COPY index.py /index.py
 
