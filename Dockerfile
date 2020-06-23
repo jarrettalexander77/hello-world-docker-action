@@ -1,6 +1,5 @@
-FROM ubuntu:16.04
+FROM python:3.8.3-buster
 
-COPY . .
-RUN apt install python3 python3-pip
+COPY index.py /index.py
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "python", "/index.py" ]
