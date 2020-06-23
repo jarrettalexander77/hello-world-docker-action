@@ -1,22 +1,12 @@
 name: 'Hello World'
-description: 'greet action'
+description: 'CSV Action'
 inputs:
-  who-to-greet:
-    description: 'who to greet'
+  csv-file:
+    description: 'csv you want anaylzed'
     required: true
-    default: 'World'
-  random-number:
-    description: 'number'
-    required: true
-    default: 1
-outputs:
-  time:
-    description: 'the time we greeted you'
-  name:
-    description: 'random name that we pass back to you'
+    default: 'default.csv'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
-    - ${{ inputs.random-number }}
+    - ${{ inputs.csv-file }}
