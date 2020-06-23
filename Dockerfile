@@ -1,5 +1,5 @@
 FROM python:3.8.3-buster
 
-COPY index.py /index.py
+COPY action.py /action.py
 
-ENTRYPOINT [ "python", "/index.py" ]
+ENTRYPOINT [ "python", "/action.py" ]
