@@ -25,7 +25,4 @@ jobs:
       uses: jarrettalexander77/hello-world-docker-action@testing/noreadme
       id: custom-action
       with:
-        who-to-greet: 'Jarrett Alexander'
-        random-number: 37 
-    - name: Other action
-      run: echo "${{ steps.custom-action.outputs.time }} ${{ steps.custom-action.outputs.name }}"
+        csv-file: test.csv
