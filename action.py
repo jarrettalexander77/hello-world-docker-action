@@ -7,4 +7,4 @@ print(test_file)
 
 df = pd.read_csv(test_file)
 
-print(df.head())
+print(df.describe())
