@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
 
-COPY index.py /index.py
+COPY entrypoint.sh /entrypoint.sh
 
-CMD ["python", "index.py"]
+ENTRYPOINT [ "/entrypoint.sh" ]
